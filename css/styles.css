@@ -2514,6 +2514,7 @@ tbody tr:hover {
     position: relative;
     transform-style: preserve-3d;
     perspective: 1000px;
+    width: 233px;
 }
 
 .category-card::before {
@@ -3313,13 +3314,19 @@ img {
     aspect-ratio: 16/9 !important;
 }
 
+@media (max-width: 550px) {
+    .posts-grid, .categories-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .category-card {
+        margin: 0 auto;
+    }
+}
+
 @media (max-width: 500px) {
     .logo h1 {
         font-size: 1.1rem;
-    }
-
-    .posts-grid, .categories-grid {
-        grid-template-columns:1fr;
     }
 
     .container {
