@@ -1,7 +1,5 @@
-/* Импорт шрифтов */
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Nunito:wght@300;400;500;600;700&display=swap');
 
-/* Основные стили */
 * {
     margin: 0;
     padding: 0;
@@ -21,7 +19,6 @@
     --gradient-light: linear-gradient(135deg, #A8DADC, #E9C46A);
     --gradient-deep: linear-gradient(135deg, #264653, #2E1A47);
     
-    /* Adding new variables for better text contrast */
     --dark-gray: #333333;
     --medium-gray: #555555;
     --light-gray: #f8f8f8;
@@ -42,7 +39,6 @@ body {
     position: relative;
 }
 
-/* Add a subtle pattern overlay to the body */
 body::before {
     content: '';
     position: fixed;
@@ -140,7 +136,6 @@ p, li, span {
     transform: scale(1.05);
 }
 
-/* Add a subtle gradient overlay to post images */
 .post-image::after {
     content: '';
     position: absolute;
@@ -246,7 +241,6 @@ p, li, span {
     border-radius: 12px 12px 0 0;
 }
 
-/* Add decorative elements to article */
 .post-content-full::after {
     content: '';
     position: absolute;
@@ -379,7 +373,6 @@ blockquote::before {
     font-family: Georgia, serif;
 }
 
-/* Add decorative element to blockquote */
 blockquote::after {
     content: '';
     position: absolute;
@@ -451,7 +444,6 @@ pre code {
     background-position: 0% 100%;
 }
 
-/* Enhanced related posts section */
 .related-posts {
     margin-bottom: 60px;
     position: relative;
@@ -527,7 +519,6 @@ pre code {
     color: var(--medium-gray);
 }
 
-/* Improved table styles with more visual interest */
 table {
     width: 100%;
     margin: 25px 0;
@@ -539,7 +530,6 @@ table {
     position: relative;
 }
 
-/* Add decorative corner to table */
 table::before {
     content: '';
     position: absolute;
@@ -590,7 +580,6 @@ tbody tr:hover td {
     color: var(--deep-purple);
 }
 
-/* Стили для страниц постов */
 .post-header {
     background: var(--gradient-dark);
     color: #fff;
@@ -815,7 +804,6 @@ pre code {
     border-bottom-color: var(--coral-red);
 }
 
-/* Adding styles for the related posts section */
 .related-posts {
     margin-bottom: 60px;
 }
@@ -846,7 +834,6 @@ pre code {
     color: var(--medium-gray);
 }
 
-/* Improving table styles */
 table {
     width: 100%;
     margin: 25px 0;
@@ -888,7 +875,6 @@ tbody tr:hover {
     background: rgba(168, 218, 220, 0.1);
 }
 
-/* Кастомный скроллбар */
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -906,13 +892,11 @@ tbody tr:hover {
     background: var(--deep-purple);
 }
 
-/* Firefox */
 * {
     scrollbar-width: thin;
     scrollbar-color: var(--dark-teal) var(--light-teal);
 }
 
-/* Шапка сайта */
 header {
     background: var(--gradient-dark);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
@@ -999,7 +983,6 @@ nav ul li a:hover:after {
     margin: 0;
 }
 
-/* Кнопка "Наверх" */
 .back-to-top {
     position: fixed;
     bottom: 20px;
@@ -1029,7 +1012,6 @@ nav ul li a:hover:after {
     font-size: 24px;
 }
 
-/* Секция Hero */
 .hero {
     background: var(--gradient-dark);
     color: #fff;
@@ -1131,7 +1113,6 @@ nav ul li a:hover:after {
     color: #fff;
 }
 
-/* Секции контента */
 section {
     margin-bottom: 60px;
 }
@@ -1156,7 +1137,6 @@ section h2:after {
     border-radius: 3px;
 }
 
-/* Секция категорий */
 .categories-section {
     margin-top: 40px;
 }
@@ -1248,12 +1228,10 @@ section h2:after {
     color: var(--light-teal);
 }
 
-/* Основной контент */
 main {
     padding-top: 20px;
 }
 
-/* Сетка постов */
 .posts-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -1359,7 +1337,6 @@ main {
     transform: translate(5px, -50%);
 }
 
-/* Все посты */
 .all-posts .post {
     padding: 0;
 }
@@ -1368,7 +1345,6 @@ main {
     margin-bottom: 10px;
 }
 
-/* Подвал */
 footer {
     background: var(--gradient-deep);
     color: #fff;
@@ -1475,7 +1451,6 @@ footer::before {
     font-size: 0.9rem;
 }
 
-/* Уведомление о куках */
 .cookie-consent {
     position: fixed;
     bottom: 0;
@@ -1561,7 +1536,6 @@ footer::before {
     left: 100%;
 }
 
-/* Адаптивность */
 @media (max-width: 768px) {
     body {
         padding-top: 60px;
@@ -1648,7 +1622,6 @@ footer::before {
     }
 }
 
-/* Стили для страниц постов */
 .post-header {
     background: var(--gradient-dark);
     color: #fff;
@@ -1828,7 +1801,6 @@ footer::before {
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
-/* Таблицы */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -1868,7 +1840,6 @@ table td {
     color: var(--dark-teal);
 }
 
-/* Стили для страницы контактов */
 .contact-section {
     background-color: var(--light-teal);
     padding: 40px;
@@ -1917,7 +1888,6 @@ table td {
     color: var(--dark-teal);
 }
 
-/* Стили для страницы о нас */
 .about-section {
     background-color: var(--light-teal);
     padding: 40px;
@@ -2016,7 +1986,6 @@ table td {
     }
 }
 
-/* Стили для страниц политик */
 .policy-section {
     background-color: var(--light-teal);
     padding: 40px;
@@ -2090,7 +2059,6 @@ table td {
     font-size: 1.2rem;
 }
 
-/* Хлебные крошки */
 .page-breadcrumb {
     margin-top: 15px;
     font-size: 0.9rem;
@@ -2112,7 +2080,6 @@ table td {
     font-size: 0.8rem;
 }
 
-/* Улучшения для внутренних страниц */
 .page-layout {
     display: grid;
     grid-template-columns: 280px 1fr;
@@ -2203,7 +2170,6 @@ table td {
     height: 100px;
 }
 
-/* Адаптивность для мобильных устройств */
 @media (max-width: 768px) {
     .page-layout {
         grid-template-columns: 1fr;
@@ -2452,7 +2418,6 @@ pre code {
     transform-origin: left;
 }
 
-/* Adding styles for the related posts section */
 .related-posts {
     margin-bottom: 60px;
 }
@@ -2483,7 +2448,6 @@ pre code {
     color: var(--medium-gray);
 }
 
-/* Improving table styles */
 table {
     width: 100%;
     margin: 25px 0;
@@ -2525,7 +2489,6 @@ tbody tr:hover {
     background: rgba(168, 218, 220, 0.1);
 }
 
-/* Современные стили для карточек категорий */
 .categories-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -2636,7 +2599,6 @@ tbody tr:hover {
     margin-bottom: 0;
 }
 
-/* Современные стили для карточек постов */
 .posts-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -2718,7 +2680,6 @@ tbody tr:hover {
     transform: scale(1.1) rotate(2deg);
 }
 
-/* Улучшенный градиентный оверлей для изображений */
 .post-image::after {
     content: '';
     position: absolute;
@@ -2826,7 +2787,6 @@ tbody tr:hover {
     transform: translate(0, -50%);
 }
 
-/* Стили для заголовков секций */
 .categories-section h2,
 .featured-posts h2 {
     text-align: center;
@@ -2850,7 +2810,6 @@ tbody tr:hover {
     border-radius: 3px;
 }
 
-/* Современные стили для страниц с постами */
 .post-header {
     position: relative;
     padding: 120px 0 80px;
@@ -2951,7 +2910,6 @@ tbody tr:hover {
     z-index: 2;
 }
 
-/* Добавляем декоративный элемент к статье */
 .post-content-full::after {
     content: '';
     position: absolute;
@@ -3110,7 +3068,6 @@ blockquote::before {
     font-family: Georgia, serif;
 }
 
-/* Добавляем декоративный элемент к цитате */
 blockquote::after {
     content: '';
     position: absolute;
@@ -3158,7 +3115,6 @@ table {
     position: relative;
 }
 
-/* Добавляем декоративный уголок к таблице */
 table::before {
     content: '';
     position: absolute;
@@ -3210,7 +3166,6 @@ tbody tr:hover td {
     color: var(--deep-purple);
 }
 
-/* Стили для секции связанных постов */
 .related-posts {
     margin: 60px 0;
     padding: 40px;
@@ -3271,7 +3226,6 @@ tbody tr:hover td {
     font-size: 1.3rem;
 }
 
-/* Стили для кода */
 pre, code {
     background: var(--deep-purple);
     color: #fff;
@@ -3328,7 +3282,6 @@ pre code {
     background-position: 0% 100%;
 }
 
-/* Стили для заявления о независимости сайта */
 .site-disclaimer {
     background: linear-gradient(135deg, rgba(46, 26, 71, 0.05), rgba(168, 218, 220, 0.1));
     border-radius: 15px;
@@ -3350,3 +3303,34 @@ pre code {
     color: var(--deep-purple);
     font-weight: 600;
 }
+
+img {
+    max-width: 1100px !important;
+    width: 100% !important;
+    height: auto !important;
+    aspect-ratio: 16/9 !important;
+}
+
+@media (max-width: 500px) {
+    .logo h1 {
+        font-size: 1.1rem;
+    }
+
+    .posts-grid, .categories-grid {
+        grid-template-columns:1fr;
+    }
+
+    .container {
+        padding: 0 5px;
+    }
+
+    .cookie-consent {
+        margin: 0 1px;
+    }
+
+    .cookie-content {
+        padding: 15px;
+    }
+}
+
+
