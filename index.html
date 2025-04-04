@@ -8,10 +8,37 @@
     <title>Infracciones y Multas - Información de Tránsito en México</title>
     <link rel="preload" href="css/styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="css/styles.css"></noscript>
-    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"></noscript>
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <style>
+        @font-face {
+          font-family: 'Font Awesome 5 Free';
+          font-style: normal;
+          font-weight: 900;
+          font-display: block;
+          src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/webfonts/fa-solid-900.woff2') format('woff2');
+        }
+        
+        .fas, .fa-solid {
+          font-family: 'Font Awesome 5 Free';
+          font-weight: 900;
+          font-style: normal;
+          font-variant: normal;
+          text-rendering: auto;
+          display: inline-block;
+          line-height: 1;
+          vertical-align: middle;
+          font-size: 1em;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+        }
+        
+        .fa-bus::before       { content: "\f207"; }
+        .fa-car::before       { content: "\f1b9"; }
+        .fa-shield-alt::before{ content: "\f3ed"; }
+        .fa-microchip::before { content: "\f2db"; }
+        .fa-route::before     { content: "\f4d7"; }
+    </style>
 </head>
 <body>
     <header>
